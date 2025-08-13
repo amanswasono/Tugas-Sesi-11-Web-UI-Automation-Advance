@@ -1,0 +1,35 @@
+{
+  "name": "web-testing-souce-demo",
+  "version": "1.0.0",
+  "description": "Project explore web automation testing dengan Selenium, Mocha, dan Visual Testing (pixelmatch + pngjs)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests --recursive --timeout 60000",
+    "test:mochawesome": "mocha tests --recursive --timeout 60000 --reporter mochawesome",
+    "test:simple-html": "mocha tests --recursive --timeout 60000 --mocha-simple-html-reporter --reporter-options output=./reports/report.html"
+  },
+  "keywords": [
+    "selenium",
+    "mocha",
+    "automation",
+    "testing",
+    "saucedemo",
+    "web-ui",
+    "visual-testing",
+    "pixelmatch"
+  ],
+  "author": "Aman Swasono",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-webdriver": "^4.34.0",
+    "pixelmatch": "^5.3.0",
+    "pngjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "exceljs": "^4.4.0",
+    "mocha": "^11.7.1",
+    "mocha-simple-html-reporter": "^2.0.0",
+    "mochawesome": "^7.1.3"
+  }
+}
