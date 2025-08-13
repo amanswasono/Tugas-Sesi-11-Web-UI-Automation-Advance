@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-13T13:14:53.295Z",
-    "end": "2025-08-13T13:14:56.070Z",
-    "duration": 2775,
+    "start": "2025-08-13T13:28:00.515Z",
+    "end": "2025-08-13T13:28:03.325Z",
+    "duration": 2810,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e44a0ebe-5eeb-4f8d-8e5e-c377d2f00a46",
+      "uuid": "e4696be7-f679-4dd9-afca-2770d407e26c",
       "title": "",
       "fullFile": "C:\\Users\\1139\\Desktop\\Tugas Sesi 11 - Web UI Automation Advance Part 2\\tests\\sauceDemo.test.js",
       "file": "\\tests\\sauceDemo.test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3cae1032-0f57-4b81-b68f-1fb0865d5a41",
+          "uuid": "ca9b8c89-a6a8-4395-9e0c-321b37b3228f",
           "title": "Sauce Demo - POM + Visual Testing",
           "fullFile": "C:\\Users\\1139\\Desktop\\Tugas Sesi 11 - Web UI Automation Advance Part 2\\tests\\sauceDemo.test.js",
           "file": "\\tests\\sauceDemo.test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook in \"Sauce Demo - POM + Visual Testing\"",
               "fullTitle": "Sauce Demo - POM + Visual Testing \"before all\" hook in \"Sauce Demo - POM + Visual Testing\"",
               "timedOut": false,
-              "duration": 1124,
+              "duration": 1059,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const options = new chrome.Options();\noptions.addArguments('--headless', '--window-size=1920,1080');\ndriver = await new Builder().forBrowser('chrome').setChromeOptions(options).build();\n// // Set ukuran viewport agar visual testing konsisten\nawait driver.manage().window().setRect({ width: 1366, height: 768 });\nloginPage = new LoginPage(driver);\nproductsPage = new ProductsPage(driver);",
               "err": {},
-              "uuid": "3e2c4ff6-f675-40e2-9ad9-23de24a83fc9",
-              "parentUUID": "3cae1032-0f57-4b81-b68f-1fb0865d5a41",
+              "uuid": "799a4491-91dc-4987-9ecf-d174badf6f64",
+              "parentUUID": "ca9b8c89-a6a8-4395-9e0c-321b37b3228f",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Sauce Demo - POM + Visual Testing\"",
               "fullTitle": "Sauce Demo - POM + Visual Testing \"after all\" hook in \"Sauce Demo - POM + Visual Testing\"",
               "timedOut": false,
-              "duration": 162,
+              "duration": 149,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "await driver.quit();",
               "err": {},
-              "uuid": "208cf66f-2f1f-4f30-a967-46c4c4f60a92",
-              "parentUUID": "3cae1032-0f57-4b81-b68f-1fb0865d5a41",
+              "uuid": "717735af-b0b6-410b-9e1f-fbef7c0762b6",
+              "parentUUID": "ca9b8c89-a6a8-4395-9e0c-321b37b3228f",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "Visual Testing - Halaman Login",
               "fullTitle": "Sauce Demo - POM + Visual Testing Visual Testing - Halaman Login",
               "timedOut": false,
-              "duration": 953,
+              "duration": 1135,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,8 +85,8 @@
               "context": null,
               "code": "await loginPage.open();\nconst logoElement = await loginPage.getLoginLogo();\nconst baselinePath = path.join(__dirname, '../baselines/login_logo.png');\nconst currentPath = path.join(__dirname, '../output/login_logo_current.png');\nconst diffPath = path.join(__dirname, '../output/login_logo_diff.png');\nconst result = await compareScreenshot(driver, logoElement, baselinePath, currentPath, diffPath);\nif (!result.baselineCreated) {\n    assert.strictEqual(result.mismatch, 0, `Visual mismatch: ${result.mismatch} pixel berbeda`);\n}",
               "err": {},
-              "uuid": "8027b003-7e4e-4e82-8b57-fae3d3cedbd5",
-              "parentUUID": "3cae1032-0f57-4b81-b68f-1fb0865d5a41",
+              "uuid": "5d90de9f-4b34-40e8-915d-f53425780607",
+              "parentUUID": "ca9b8c89-a6a8-4395-9e0c-321b37b3228f",
               "isHook": false,
               "skipped": false
             },
@@ -94,7 +94,7 @@
               "title": "User berhasil login",
               "fullTitle": "Sauce Demo - POM + Visual Testing User berhasil login",
               "timedOut": false,
-              "duration": 336,
+              "duration": 280,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -103,8 +103,8 @@
               "context": null,
               "code": "await loginPage.login('standard_user', 'secret_sauce');\nconst title = await productsPage.getTitle();\nassert.strictEqual(title, 'Products');",
               "err": {},
-              "uuid": "dd45a3fe-de86-4872-a89f-18461ca420e4",
-              "parentUUID": "3cae1032-0f57-4b81-b68f-1fb0865d5a41",
+              "uuid": "c8307ce9-d7b8-49f9-bc6a-aa53e2db1efd",
+              "parentUUID": "ca9b8c89-a6a8-4395-9e0c-321b37b3228f",
               "isHook": false,
               "skipped": false
             },
@@ -112,7 +112,7 @@
               "title": "User berhasil sort produk A-Z",
               "fullTitle": "Sauce Demo - POM + Visual Testing User berhasil sort produk A-Z",
               "timedOut": false,
-              "duration": 193,
+              "duration": 180,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -121,22 +121,22 @@
               "context": null,
               "code": "await productsPage.sortByNameAsc();\nconst productNames = await productsPage.getAllProductNames();\nconst sortedNames = [...productNames].sort();\nassert.deepStrictEqual(productNames, sortedNames);",
               "err": {},
-              "uuid": "aadfd5dd-5ef0-4d59-a028-4f81e45370f3",
-              "parentUUID": "3cae1032-0f57-4b81-b68f-1fb0865d5a41",
+              "uuid": "66158fd3-51d3-4fef-a358-acc034ed2e1a",
+              "parentUUID": "ca9b8c89-a6a8-4395-9e0c-321b37b3228f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8027b003-7e4e-4e82-8b57-fae3d3cedbd5",
-            "dd45a3fe-de86-4872-a89f-18461ca420e4",
-            "aadfd5dd-5ef0-4d59-a028-4f81e45370f3"
+            "5d90de9f-4b34-40e8-915d-f53425780607",
+            "c8307ce9-d7b8-49f9-bc6a-aa53e2db1efd",
+            "66158fd3-51d3-4fef-a358-acc034ed2e1a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1482,
+          "duration": 1595,
           "root": false,
           "rootEmpty": false,
           "_timeout": 60000
