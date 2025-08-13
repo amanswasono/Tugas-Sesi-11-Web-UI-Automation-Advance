@@ -48,7 +48,7 @@ Pengujian dilakukan untuk memverifikasi skenario login, pengurutan produk (sort)
    ```
 2. Clone repository ini:
    ```bash
-   git clone https://github.com/username/saucedemo-automation.git
+   git clone [https://github.com/username/saucedemo-automation.git](https://github.com/amanswasono/Tugas-Sesi-11-Web-UI-Automation-Advance.git)
    cd saucedemo-automation
    ```
 3. Install dependencies:
@@ -114,4 +114,4 @@ Laporan tersimpan di:
 
 ### ✍️ Author
 **Aman Swasono**  
-_Tugas Sesi 11 - Web UI Automation Advance Part 2_
+_Tugas Sesi 11 - Web UI Automation Advance_
